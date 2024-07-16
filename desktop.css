@@ -390,15 +390,15 @@ main {
                 font-weight: 500;
             }
           }
-          button {
+          .call-to-action {
             width: 88px;
             height: 88px;
             margin-top: 50px; 
             border-radius: 50%;
             border: none;
             font-size: 16px;
-            color: white;
-            background-image: linear-gradient(to right, #FF52AE, #8B52FF);
+            text-align: center;
+            padding: 20px;
           }
         }
       }         
