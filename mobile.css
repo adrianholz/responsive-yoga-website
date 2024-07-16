@@ -1,0 +1,152 @@
+@media (max-width: 1000px) {
+  .mobile {
+    display: unset;
+  }
+
+  header {
+    nav {
+      display: none;
+    }
+  }
+
+  main {
+    padding-top: 40px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 32px;
+      text-align: center;
+    }
+    .hero-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > p {
+        max-width: 340px;
+      }
+    }
+
+    h1 {
+      max-width: 320px;
+      font-size: 44px;
+      span {
+        transform: rotate(8deg) translateX(0px) translateY(10px);
+      }
+      &:after {
+        right: unset;
+        left: -20px;
+        top: unset;
+        bottom: -20px;
+        transform: scale(0.75);
+      }
+      &:before {
+        left: unset;
+        right: 50px;
+        bottom: -110px;
+      }
+    }
+    .hero-data {
+      span {
+        font-size: 38px;
+      }
+    }
+  }
+  .influencers {
+    padding-top: 60px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 80px;
+      div {
+        span {
+          font-size: 28px;
+        }
+        img {
+          max-width: 230px;
+          width: 100%;
+        }
+      }
+    }
+    p {
+      max-width: unset;
+    }
+  }
+
+  .health {
+    padding-top: 130px;
+    text-align: center;
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+    .health-info {
+      align-items: center;
+      gap: 30px;
+      h2 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+    .container {
+      .health-image {
+        > img {
+          width: 100%;
+        }
+        > div:nth-child(1) {
+          left: -30px;
+        }
+        > div:nth-child(2) {
+          right: 0;
+        }
+        > div {
+          text-align: left;
+          align-items: center;
+        }
+        > div img {
+          width: 100%;
+          max-width: 48px;
+        }
+        p,
+        span {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .workout {
+    padding-top: 60px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .workout-info {
+      align-items: center;
+      text-align: center;
+      gap: 30px;
+      h2 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+    .workout-image {
+      p {
+        font-size: 13px;
+      }
+      div:nth-child(1) {
+        top: 30px;
+      }
+      div:nth-child(2) {
+        bottom: 30px;
+      }
+    }
+  }
+}
