@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #f5f0ff;
+  overflow-x: hidden;
 }
 
 .container {
@@ -25,4 +25,11 @@ body {
   align-items: center;
   max-width: fit-content;
   gap: 4px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 330px;
+    padding: 0px;
+  }
 }

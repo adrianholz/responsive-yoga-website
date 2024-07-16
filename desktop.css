@@ -1,3 +1,87 @@
+.input-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url("./assets/svg/dark.svg");
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.mobile {
+  display: none;
+}
+
+.toggle {
+  display: none;
+  &:checked {
+    ~ .input-toggle {
+      background: url("./assets/svg/light.svg");
+    }
+    ~ .background {
+      background: #14092a;
+      header {
+        ul li a {
+          color: #d1c0f1;
+        }
+      }
+      main {
+        h1 {
+          color: #d1c0f1;
+        }
+        .hero-info {
+          > p {
+            color: #a094b8;
+          }
+        }
+        .hero-data {
+          color: #d1c0f1;
+        }
+      }
+      .influencers {
+        color: #d1c0f1;
+        p {
+          color: #a094b8;
+        }
+      }
+      .health {
+        color: #a094b8;
+        h2 {
+          color: #d1c0f1;
+        }
+        .container {
+          .health-image {
+            > div {
+              background: #372a51;
+              color: #d1c0f1;
+            }
+          }
+        }
+      }
+      .workout {
+        h2 {
+          color: #d1c0f1;
+        }
+        p {
+          color: #a094b8;
+        }
+        .workout-image {
+          div {
+            background: #372a51;
+          }
+        }
+      }
+    }
+  }
+}
+
+.background {
+  background: #f5f0ff;
+  transition: 0.2s ease;
+}
+
 header {
   padding: 30px 20px;
   .container {
@@ -34,6 +118,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    > img {
+      width: 100%;
+    }
   }
   h1 {
     font-size: 90px;
@@ -104,6 +191,11 @@ main {
     gap: 40px;
     justify-content: space-between;
     align-items: center;
+    > div {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
   }
   p {
     max-width: 340px;
@@ -218,6 +310,12 @@ main {
   }
   .workout-image {
     position: relative;
+    p {
+      background: linear-gradient(to right, #ff62b7, #9f53ff);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 500;
+    }
     div {
       display: flex;
       gap: 10px;
@@ -234,6 +332,10 @@ main {
     }
     div:nth-child(2) {
       bottom: 90px;
+    }
+    > img {
+      width: 100%;
+      max-width: 100%;
     }
   }
 }
