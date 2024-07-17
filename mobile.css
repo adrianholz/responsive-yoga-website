@@ -149,4 +149,127 @@
       }
     }
   }
+
+  .follow-us {
+    .container {
+      .follow-us-content {
+        justify-content: center;
+        margin: 0;
+        .inner-text {
+          position: relative;
+          padding-top: 64px;
+          h2 {
+            font-size: 32px;
+            padding: 0 70px;
+          }
+          .call-to-action {
+            margin-top: 24px;
+          }
+        }
+        .first-line {
+          margin-top: 0;
+          margin-bottom: 10px;
+          gap: 16px;
+          justify-content: center;
+          #yoga-1 {
+            width: 140px;
+          }
+          #yoga-2 {
+            width: 140px;
+            margin-top: 80px;
+          }
+          
+        }
+        .second-line {
+          flex-direction: column;
+          padding-bottom: 64px;
+          #yoga-3 {
+            width: 230px;
+            margin-bottom: 10px;
+          }
+          #yoga-4 {
+            width: 230px;
+            align-self: end;
+          }
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    .container {
+      .newsletter-container {
+        width: 328px;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        .newsletter-content {
+          width: 100%;
+          h3 {
+            font-size: 28px;
+          }
+          p {
+            padding: 15px 20px;
+          }
+        }
+        .subscribe-bar {
+          flex-direction: column;
+          width: 296px;
+          height: 64px;
+          input {
+            width: 100%;
+            height: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+          }
+          .call-to-action {
+            max-width: 296px;
+            margin: 14px 0 40px 0;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+          }       
+        }
+      }
+    }
+  }
+
+  footer {
+    .container {
+      .contact-information {
+        flex-direction: column;
+        .yoga-container {
+          padding-bottom: 40px;
+          p {
+            padding-top: 20px;
+          }
+        }
+        .info-container {
+          margin-left: 0;
+          margin-bottom: 40px;
+          h3 {
+            padding-bottom: 20px;
+          }
+        }
+      }
+      .line {
+        padding-top: 0;
+        padding-bottom: 30px;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        .blog-container {
+          margin: 0 auto;
+          .blog-content {
+            ul li {
+              padding: 10px;
+            }
+          }
+        }
+        .copyright {
+          margin: 30px auto auto 32px;
+          text-align: center;
+        }
+      }
+    }
+  } 
 }

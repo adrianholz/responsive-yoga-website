@@ -362,45 +362,49 @@ main {
     .follow-us-content {
       display: flex;
       flex-direction: column;
-      margin: 35px;                      
+      margin: 35px;
+      .inner-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;            
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);   
+        h2 {
+          width: 414px;
+          padding-top: 196px;
+          text-align: center;
+          font-size: 64px;
+          font-family: "Lora", serif;
+          font-weight: 500;
+          color: #220953;
+          span {
+              background-image: linear-gradient(to right, #FF52AE, #8B52FF);
+              background-clip: text;
+              -webkit-background-clip: text;
+              color: transparent;
+              font-family: "Lora", serif;
+              font-weight: 500;
+          }
+        }
+        .call-to-action {
+          width: 88px;
+          height: 88px;
+          margin-top: 50px; 
+          border-radius: 50%;
+          border: none;
+          font-size: 16px;
+          text-align: center;
+          padding: 20px;
+        }
+      }
       .first-line {
         display: flex;
         margin-top: 96px;
         margin-bottom: 15px;
         justify-content: space-between;
-        align-items: center;              
-        .inner-text {
-          display: flex;
-          flex-direction: column;
-          align-items: center;                 
-          h2 {
-            width: 414px;
-            padding-top: 96px;
-            text-align: center;
-            font-size: 64px;
-            font-family: "Lora", serif;
-            font-weight: 500;
-            color: #220953;
-            span {
-                background-image: linear-gradient(to right, #FF52AE, #8B52FF);
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: transparent;
-                font-family: "Lora", serif;
-                font-weight: 500;
-            }
-          }
-          .call-to-action {
-            width: 88px;
-            height: 88px;
-            margin-top: 50px; 
-            border-radius: 50%;
-            border: none;
-            font-size: 16px;
-            text-align: center;
-            padding: 20px;
-          }
-        }
+        align-items: center;   
+        
       }         
       .second-line {
         display: flex;
