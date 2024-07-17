@@ -362,17 +362,20 @@ main {
     .follow-us-content {
       display: flex;
       flex-direction: column;
-      margin: 35px;                      
+      margin: 35px;
       .first-line {
         display: flex;
         margin-top: 96px;
         margin-bottom: 15px;
         justify-content: space-between;
-        align-items: center;              
+        align-items: center;   
         .inner-text {
           display: flex;
           flex-direction: column;
-          align-items: center;                 
+          align-items: center;            
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);   
           h2 {
             width: 414px;
             padding-top: 96px;
