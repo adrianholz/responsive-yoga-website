@@ -155,36 +155,37 @@
       .follow-us-content {
         justify-content: center;
         margin: 0;
+        .inner-text {
+          position: relative;
+          padding-top: 64px;
+          h2 {
+            font-size: 32px;
+            padding: 0 70px;
+          }
+          .call-to-action {
+            margin-top: 24px;
+          }
+        }
         .first-line {
-          margin-top: 0px;
+          margin-top: 0;
+          margin-bottom: 10px;
           gap: 16px;
-          height: 400px;
           justify-content: center;
           #yoga-1 {
-            margin-top: 510px;
             width: 140px;
           }
           #yoga-2 {
-            margin-top: 610px;
             width: 140px;
+            margin-top: 80px;
           }
-          .inner-text {
-            h2 {
-              font-size: 32px;
-              padding: 0 70px;
-            }
-            .call-to-action {
-              margin-top: 24px;
-            }
-          }
+          
         }
         .second-line {
           flex-direction: column;
-          padding-top: 200px;
           padding-bottom: 64px;
           #yoga-3 {
             width: 230px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
           }
           #yoga-4 {
             width: 230px;
